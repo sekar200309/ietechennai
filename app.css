@@ -1,0 +1,196 @@
+/* Reset some default styles */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #1b1b1b;
+}
+
+/* Header styles */
+header {
+    background-color:#1b1b1b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 2px white solid;
+    
+}
+
+/* Logo and Company Name */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    margin-right: 10px;
+}
+
+/* Navigation menu styles */
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+   
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1b1b1b;
+ 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding: 5px;
+}
+ul a{
+  color: white;
+  text-decoration: none;
+ 
+}
+h2, p{
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+button{
+  border-radius: 25px;
+  padding: 18px;
+  margin: 10px;
+  background-color: #E50914;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+h2{
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 5px;
+}
+
+/*events
+.eventsdiv img{
+    width: 5cm;
+    height: 7cm;
+}
+.event-box{
+    background-color: white;
+    border:2px  #E50914 solid ;
+    
+}
+.eventsdiv h3,p,a{
+        color: aqua;
+        text-decoration: none;
+    }
+    .event-box1{
+        margin-left: 10px;
+        width: 29%;
+        padding: 10px;
+        border: 2px red solid;
+        
+    }
+    .event-box2{
+        margin-left: 10px;
+        width: 29%;
+        padding: 10px;
+        border: 2px red solid;
+        position: relative;
+        left: 250px;
+        bottom: 600px;
+    }
+    .event-box3{
+        
+        width: 29%;
+        padding: 10px;
+        border: 2px red solid;
+        position: relative;
+        left: 500px;
+    }
+    .event-box4{
+        
+        width: 29%;
+        padding: 10px;
+        border: 2px red solid;
+       
+    }
+    
+*/
+
+footer {
+background-color: #1b1b1b; /* Footer background color */
+color: white;
+padding: 20px 0;
+text-align: center;
+border: 2px white solid;
+}
+
+.footer-content {
+padding: 5px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.contact-info, .useful-links, .social-media {
+flex: 1;
+padding: 20px;
+text-align: left;
+}
+
+.contact-info p {
+margin: 5px 0;
+}
+
+.useful-links ul {
+list-style: none;
+padding: 0;
+}
+
+.useful-links ul li {
+margin-bottom: 10px;
+}
+
+.useful-links a {
+color: white;
+text-decoration: none;
+}
+
+.social-media .social-icon {
+display: inline-block;
+margin-right: 10px;
+}
+
+.social-media .social-icon img {
+width: 30px;
+height: 30px;
+vertical-align: middle;
+}
+
+.copyright {
+margin-top: 20px;
+}
+main{
+padding: 10px;
+}
+

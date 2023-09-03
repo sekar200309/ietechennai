@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, a{
+            color: white;
+            text-decoration: none;
+        }
+
+        /*header style*/
+        /* Reset some default styles */
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #1b1b1b;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #1b1b1b;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border: 2px white solid;
+            border-radius: 0 0 20px 20px;
+        }
+
+        /* Logo and Company Name */
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 40px; /* Adjust the width as needed */
+            height: 40px; /* Adjust the height as needed */
+            margin-right: 10px;
+        }
+
+        /* Navigation menu styles */
+        nav {
+            display: flex;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        /* Dropdown menu styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #1b1b1b
+           
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+/*end here*/
+        p {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+        }
+        .IETE {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        .boxes {
+            display: flex;
+            flex-direction: row; 
+            justify-content: space-between; 
+            margin: 40px;
+        }
+        .box1 {
+            border: 2px red solid;
+            width: 40%;
+            padding: 10px;
+        }
+        .box2, .box3 {
+            border: 2px red solid;
+            width: 40%;
+            padding: 10px;
+        }
+        .box2 {
+            float: right; 
+        }
+        .box3 {
+            float: right; 
+        }
+        .college-card {
+            border: 2px blueviolet solid;
+          
+            display: block;
+            margin-top: 20px; 
+            text-align: center;
+            justify-content: center;
+        }
+        .card-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 25%; 
+        }
+        .card1 {
+            border: 2px red solid;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 15px;
+            width: calc(33.33% - 20px); 
+            
+           transition: background-color 0.3s; 
+        }
+      
+        .card1:hover {
+            background-color: lightgray;
+        }
+        
+
+        footer {
+background-color: #1b1b1b; /* Footer background color */
+color: white;
+padding: 20px 0;
+text-align: center;
+border: 2px white solid;
+}
+
+.footer-content {
+padding: 5px;
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.contact-info, .useful-links, .social-media {
+flex: 1;
+padding: 20px;
+text-align: left;
+}
+
+.contact-info p {
+margin: 5px 0;
+}
+
+.useful-links ul {
+list-style: none;
+padding: 0;
+}
+
+.useful-links ul li {
+margin-bottom: 10px;
+}
+
+.useful-links a {
+color: white;
+text-decoration: none;
+}
+
+.social-media .social-icon {
+display: inline-block;
+margin-right: 10px;
+}
+
+.social-media .social-icon img {
+width: 30px;
+height: 30px;
+vertical-align: middle;
+}
+
+.copyright {
+margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../logo.png" alt="Logo">
+            <h1>IETE CHENNAI</h1>
+        </div>
+        <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Committe</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Committe</a></li>
+                <li class="dropdown">
+                    <a href="#">Chencon</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">2022</a></li>
+                        <li><a href="#">2021</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">More</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Chenlink</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="IETE">IETE</p>
+        <p>Founded in 1953, the Institution of Electronics and Telecommunication Engineers (IETE) is a leading professional society. Its vision is to reach the unreached and empower the youth through Technical Education and Skill development with a Mission for Advancement of Electronics, Telecommunication, Information Technology & other related disciplines; to contribute in Nation's Human Resource & Infrastructure Development through our Engineers & Scientists. The Government of India, Ministry of Science and Technology, Department of Scientific & Industrial Research has recognized IETE as a Scientific and Industrial Research Organization (SIRO). The Institution has also been notified as an Educational Institution of National Eminence by the Government of India. IETE is governed by its elected Governing Council headed by an elected President. It has on its roll the Secretary General – the head of IETE Secretariat as Chief Executive. The Institution is managed through various Committees and Boards nominated by the Governing Council. The 63 Centers are spread all over India 02 abroad and are managed by respective Executive Committees. To keep pace with technological development and achieve the mission, it organizes conferences, conventions, symposia, seminars, workshops, publications and brain storming sessions for continued knowledge upgradation of its members.</p>
+
+        <div class="boxes">
+            <div class="box1">
+                <h2>Chennai Center</h2>
+                <p>Chennai Centre of IETE is committed to attain commanding heights and achieve the status of “Centre of Excellence” in Technical, Engineering & Management education by harnessing the best practices in educational innovation and through its concerted endeavors like quality teaching, industrial consultancy and training to the aspirants including corporate training.</p>
+                <p>The Centre assigns top priority to the basic need for education transformation in keeping pace with time, and aims at to develop the highest quality of manpower to cater to the needs & expectations of industry, R&D and educational institutions, with a higher degree of employability for today and tomorrow.</p>
+            </div>
+
+            <div class="box2 box3">
+                <h2>Goals</h2>
+                <p><b>Vision:</b> Reaching the un-reached and empowering the youth through Technical Education and Skill Development.</p>
+                <p><b>Mission:</b> Advancement of Electronics, Telecommunication, Information Technology & other related disciplines to contribute in Nation’s Human Resource & Infrastructure Development through our Engineers.</p>
+                <p><b>Motives:</b> IETE is helping its students to learn and grow in the emerging field of Electronics and Telecommunication. One of the missions of IETE is to provide the best mode of studying a Btech degree programme.</p>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="college-card">
+                <h2>List of Colleges</h2>
+                <div class="card-row">
+                    <div class="card1">Sri Venkateswara College of Engineering, Sriperambadur</div>
+                    <div class="card1">Panimalar Institute of Technology</div>
+                    <div class="card1">Easwari Engineering College</div>
+                    <div class="card1">Veltech Multi Engineering College</div>
+                    <div class="card1">SRM Institute of Science and Technology</div>
+                    <div class="card1">Jeppiar Institute of Technology</div>
+                    <div class="card1">RMK College of Engineering and Technology</div>
+                    <div class="card1">Velammal Engineering College</div>
+                    <div class="card1">KCG College of Technology</div>
+                    <div class="card1">Saveetha Engineering College</div>
+                    <div class="card1">Dr. M G R Educational & Research Institute</div>
+                    <div class="card1">Dr. M G R Educational & Research Institute</div>
+                    <div class="card1">DMI College of Engineering</div>
+                    <div class="card1">MISRIMAL NAVAJEE MUNOTH JAIN ENGINEERING COLLEGE</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3 style="color: white;">IETE Chennai</h3>
+                <p>IETE Chennai Centre, No: 37, Tamil Nadu 600086</p>
+                <p>Conran Smith Road Entrance Peters Road,</p>
+                <p>Gopalapuram, Chennai</p>
+                <p>Phone: 044 2835 0773</p>
+                <p>Email: ietechennai@gmail.com</p>
+            </div>
+            <div class="useful-links">
+                <h3 style="color: white;">Useful Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Committee</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Courses available</a></li>
+                    <li><a href="#">Join Our Newsletter</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <h3 style="color: white;">Follow Us</h3>
+                <a href="#" class="social-icon"><img src="../instagram.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="../youtube.png" alt="YouTube"></a>
+                <a href="#" class="social-icon"><img src="../linkedin.png" alt="linkedin"></a>
+             </div>
+        </div>
+        <div class="copyright">
+            © Copyright IETE Chennai. All Rights Reserved
+        </div>
+        
+</footer>
+    
+</body>
+</html>
